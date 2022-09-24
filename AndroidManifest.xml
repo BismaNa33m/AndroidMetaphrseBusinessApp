@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.techsof.demoapp">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <supports-screens
+        android:smallScreens="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:xlargeScreens="true"
+
+
+
+        >
+    </supports-screens>
+
+    <compatible-screens>
+        <screen android:screenSize="small" android:screenDensity="mdpi"/>
+    <screen android:screenSize="small" android:screenDensity="hdpi"/>
+        <screen android:screenSize="small" android:screenDensity="xhdpi"/>
+        <screen android:screenSize="small" android:screenDensity="xxhdpi"/>
+        <screen android:screenSize="small" android:screenDensity="ldpi"/>
+
+        <screen android:screenSize="normal" android:screenDensity="mdpi"/>
+        <screen android:screenSize="normal" android:screenDensity="hdpi"/>
+        <screen android:screenSize="normal" android:screenDensity="xhdpi"/>
+        <screen android:screenSize="normal" android:screenDensity="xxhdpi"/>
+        <screen android:screenSize="normal" android:screenDensity="ldpi"/>
+    </compatible-screens>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logozo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Prices"
+
+            android:label="Preise"
+            android:theme="@style/Theme.AppCompat.Light"
+            >
+
+
+
+        </activity>
+        <activity
+            android:name=".Auftrag"
+            android:label="@string/komhi"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".Contact_us"
+            android:label="Kontaktieren Sie uns"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity
+            android:name=".Splash_Screen"
+            android:theme="@style/Theme.AppCompat.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="Home"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".Languages"
+            android:label="@string/lang"
+            android:theme="@style/Theme.AppCompat.Light" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".Nav"
+            android:label="@string/title_activity_nav"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".contactus"
+            android:label="@string/About" />
+        <activity
+            android:name=".Impressum"
+            android:label="@string/impres" />
+        <activity
+            android:name=".AGB"
+            android:label="@string/agb" />
+        <activity
+            android:name=".Datenz"
+            android:label="@string/conta" />
+        <activity
+            android:name=".Service"
+            android:label="@string/servix" />
+        <activity
+            android:name=".Bega"
+            android:label="@string/serveon" />
+        <activity
+            android:name=".Dolme"
+            android:label="@string/servetwo" />
+        <activity
+            android:name=".Lecto"
+            android:label="@string/servethree" />
+        <activity
+            android:name=".Notar"
+            android:label="@string/servefour" />
+        <activity
+            android:name=".Telefon"
+            android:label="@string/servefive" />
+        <activity
+            android:name=".Fluster"
+            android:label="@string/servesix" />
+        <activity
+            android:name=".Feedback"
+            android:label="@string/help" />
+    </application>
+
+</manifest>
